@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SeñaLink</title>
+  <meta name="description" content="SeñaLink: comunicación en ventanilla entre personas sordas y agentes. Señas de LSP a texto y voz, y la voz del agente a texto.">
+  <meta name="theme-color" content="#1c1f24">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#view">Saltar al contenido</a>
+  <div id="view" class="app" tabindex="-1"></div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog" class="dialog"></dialog>
+
+  <noscript><p>SeñaLink necesita JavaScript activado.</p></noscript>
+  <!-- TensorFlow.js (window.tf): ejecuta el modelo de señas. -->
+  <script src="vendor/tfjs/tf.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
